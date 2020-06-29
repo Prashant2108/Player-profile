@@ -2,7 +2,7 @@ Player Profile Visualization
 
 by - Prashant Agnihotri
 
-Project can be accessed online at https://athlete-profile-form.glitch.me/#!/
+Project can be accessed online at https://athleteprofile2108.herokuapp.com/#!/
 
 dependencies:
 
