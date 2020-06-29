@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <center>
+    <img
+      src="./public/images/SportsLogo.png"
+      alt="Athlete Profile"
+      style="width: 25vw; min-width: 200px;"
+    />
+  </center>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="jumbotron text-center">
+        <button type="submit" class="btn btn-primary btn-lg" ui-sref="/">
+          Back
+        </button>
+        <ul class="uperline">
+          <li class="lines" ng-repeat="player in controller5.players">
+            <div class="playerlist">
+              <img
+                src="./public/images/defaultavatar.jpg"
+                alt="Avatar"
+                style="width: 150px;"
+              />
+              <p>
+                <a ui-sref="listOne({username:player.username})"
+                  >{{player.name}}</a
+                >
+              </p>
+              <p ng-repeat="sport in player.sport">{{sport}}</p>
+              <p>{{player.twitter}}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
